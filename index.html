@@ -4,66 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file for styling -->
 </head>
 
 <body>
-    <form class="form-container" action="#" method="POST">
-        <h2>Registration Form</h2>
-        <!-- First Name -->
+    <!-- Registration form -->
+    <form action="#" class="form-container" method="post">
+        <h2>Registration Form</h2> <!-- Form title -->
+
+        <!-- First name input -->
         <label for="first-name">First Name</label>
         <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
-        
-        <!-- Last Name -->
+
+        <!-- Last name input -->
         <label for="last-name">Last Name</label>
         <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
-        
-        <!-- Email -->
+
+        <!-- Email address input -->
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        
-        <!-- Password -->
+
+        <!-- Password input -->
         <label for="password">Password</label>
         <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8">
-        
-        <!-- Confirm Password -->
+
+        <!-- Confirm password input -->
         <label for="confirm-password">Confirm Password</label>
         <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required minlength="8">
-        
-        <!-- Date of Birth -->
-        <label for="dob">Date of Birth</label>
+
+        <!-- Date of birth input -->
+        <label for="dob">Date of birth</label>
         <input type="date" id="dob" name="dob" required>
-        
-        <!-- Gender -->
+
+        <!-- Gender selection -->
         <label>Gender</label>
         <div class="radio-group">
-            <input type="radio" id="male" name="gender" value="Male" required>
+            <!-- Male gender radio button -->
             <label for="male">Male</label>
-            
-            <input type="radio" id="female" name="gender" value="Female">
+            <input type="radio" id="male" name="gender" value="Male" required>
+
+            <!-- Female gender radio button -->
             <label for="female">Female</label>
-            
-            <input type="radio" id="other" name="gender" value="Other">
+            <input type="radio" id="female" name="gender" value="Female" required>
+
+            <!-- Other gender radio button -->
             <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="Other" required>
         </div>
-        
-        <!-- About Me -->
+
+        <!-- About me text area -->
         <label for="about-me">About Me</label>
-        <textarea id="about-me" name="about-me" rows="4" placeholder="Your story?"></textarea>
-        
-        <!-- Profession -->
+        <textarea name="about-me" id="about-me" rows="4" placeholder="Your story?"></textarea>
+
+        <!-- Profession dropdown menu -->
         <label for="profession">Choose Your Profession</label>
-        <select id="profession" name="profession" required>
-            <option value="">Select your profession</option>
+        <select name="profession" id="profession" required>
+            <option value="">Select your profession</option> <!-- Default option -->
             <option value="Web Development">Web Development</option>
             <option value="Data Analytics">Data Analytics</option>
             <option value="UI/UX Design">UI/UX Design</option>
             <option value="Other">Other</option>
         </select>
-        
-        <!-- Submit Button -->
+
+        <!-- Submit button -->
         <button type="submit">Submit</button>
     </form>
 </body>
-
 </html>
